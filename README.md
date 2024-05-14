@@ -18,8 +18,13 @@ CSS
 Install
 To install all the dependences of the project, run the following command:
 git clone https://github.com/Aryagoy/Nextjs-ContactsPage.git
+
 npm install
-npm start
+
+npm run dev
+
+On your browser, http://localhost:3000/ and the web application starts running on local
+
 
 
 Source Code:
