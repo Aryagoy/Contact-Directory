@@ -1,36 +1,47 @@
-**ContactsPage:**
-The purpose of this app is to deploy a simple web application with 3 screens. These three screens show a list of contacts, allows users to create a new contact via a modal, and shows a contact’s information via a modal.
+# ContactsPage
 
-**Preview:**
-<img width="689" alt="Screenshot 2024-05-14 at 11 54 45 AM" src="https://github.com/Aryagoy/Nextjs-ContactPage/assets/42674731/54bfc685-fbbd-417b-bd30-8abd6fca7d70">
+**ContactsPage** is a simple web application that allows users to view, create, and manage a list of contacts. The application consists of three main screens: 
+1. A contact list displaying all available contacts.
+2. A modal for adding a new contact.
+3. A modal for viewing the details of an individual contact.
+
+## Preview
+
+![ContactsPage Preview](https://github.com/Aryagoy/Nextjs-ContactPage/assets/42674731/54bfc685-fbbd-417b-bd30-8abd6fca7d70)
+
+## About the Project
+
+The project begins its execution from `pages/index.tsx`, where a default list of contacts is created and passed to the `ContactList.js` component. This component is responsible for rendering the contacts in a sorted manner, displaying them in a table format. Each contact's details, including their unique ID, are stored in objects for easy access and manipulation.
+
+For creating a new contact, the `NewContactModal.js` component handles the functionality. When a user clicks on the "Add Contact" button, a modal window opens, allowing the user to enter new contact details. Upon submitting the form, the contact is added to the existing contact list and immediately displayed on the user interface.
+
+## Technologies Used
+
+- **Next.js**: React framework for server-side rendering and static site generation.
+- **React**: JavaScript library for building user interfaces.
+- **JavaScript**: Core programming language for the application.
+- **Redux**: State management for handling the application's data flow.
+- **CSS**: Styling for the application.
+
+## Installation
+
+Follow these steps to set up the project locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Aryagoy/Nextjs-ContactPage.git
+
+2. **Install dependencies**:
+    ```bash
+    npm install
 
 
-**About the project:** The project starts it's implementation from pages/index.tsx where it first creates a default contacts list and then sends that lists to the /component/ContactList.js file. From here, the contacts are rendered in sorted manner and a table is created to show those contacts. Storing the id and other details of the contacts in object so that we can use the object later to access those contacts. The next component used is NewContactModal.js where the functionality of adding a new contact is created. Whenever a person clicks on add contact button, a modal pops up. After filling out the details, when the user clicks on submit button, the contacts get stored in the existing contacts list and gets rendered on the UI.
+3. ***Configure Environment Variables***: 
+Create a .env.local file in the root directory and add your environment variables for MongoDB, Appwrite, and other services.
 
+4. **Run the application**:
 
-**Technology Used:**
-Next js
-React
-Java Script
-Redux
-CSS
+    ```bash 
+    npm run dev
+The app will run in development mode and can be accessed at http://localhost:3000.
 
-**Install:**
-To install all the dependences of the project, run the following command:
-
-git clone https://github.com/Aryagoy/Nextjs-ContactPage.git
-
-npm install
-
-npm run dev
-
-On your browser, http://localhost:3000/ and the web application starts running on local
-
-
-
-**Source Code:**
-Link : https://github.com/Aryagoy/Nextjs-ContactPage
-
-
-**Deployment Link:**
-Link : https://nextjs-contacts-74c22.web.app/
